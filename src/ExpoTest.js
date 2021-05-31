@@ -24,6 +24,8 @@ export default () => (
                 }
             },
             webPreviewRef,
+            verbose: true,
+            // ...(USE_WORKERS ? { createTransport: createWorkerTransport } : {}),
         })
     );
     const { webPreviewURL } = snack.getState();
