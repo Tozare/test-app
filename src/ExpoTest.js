@@ -2,7 +2,7 @@ import React from 'react';
 import { Snack } from 'snack-sdk';
 
 
-export const Expo = () => {
+export const ExpoTest = () => {
     const webPreviewRef = React.useRef(null);
     const [snack] = React.useState(() =>
         new Snack({

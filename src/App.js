@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {Expo} from "./expo";
+import {ExpoTest} from "./ExpoTest";
 function App() {
   return (
     <div className="App">
@@ -19,7 +19,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <Expo/>
+      {/*<ExpoTest/>*/}
     </div>
   );
 }
