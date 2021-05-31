@@ -25,7 +25,7 @@ export default () => (
                 }
             },
             webPreviewRef,
-            // verbose: true,
+            verbose: true,
             // ...{createTransport: createWorkerTransport}
             // ...(USE_WORKERS ? { createTransport: createWorkerTransport } : {}),
         })
