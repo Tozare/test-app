@@ -6,6 +6,7 @@ export const ExpoTest = () => {
     const webPreviewRef = React.useRef(null);
     const [snack] = React.useState(() =>
         new Snack({
+            host: "https://test-app-12341.herokuapp.com/",
             files: {
                 'App.js': {
                     type: 'CODE',
@@ -67,14 +68,14 @@ export default () => (
     //
     // getAsyncURL();
     console.log(snack.getState());
-    // const { webPreviewURL } = snack.getState();
+    const { webPreviewURL } = snack.getState();
 // Make the Snack available online
     return (
         <div style={{height: 40, backgroundColor: "blue"}}>
             HI bitch
             <iframe
                 ref={(c) => (webPreviewRef.current = c?.contentWindow ?? null)}
-                // src={webPreviewURL}
+                src={webPreviewURL}
                 allow="geolocation; camera; microphone"
             />
         </div>
